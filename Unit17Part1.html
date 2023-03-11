@@ -1,0 +1,48 @@
+<!-- What is HTTP?  -->
+HTTP is a set of rules that computers use to talk to each other over the internet. When you visit a website, your web browser uses HTTP to ask the web server for the page you want to see. The server responds with the page and any other resources that are needed to display it. HTTP is the basic language that the internet uses to make websites work.
+<!-- What is a URL?  -->
+A URL is a web address that tells your web browser where to find a resource on the internet, like a webpage, an image, or a file. It has several parts, including the protocol (like http:// or https://), the domain name (like www.example.com), and the path to the specific resource. When you type a URL into your browser, it uses this information to locate and display the resource you're looking for.
+<!-- What is DNS?  -->
+DNS is like a phonebook for the internet. Just like a phonebook helps you look up a phone number for a person or business, DNS helps your computer look up the IP address for a website you want to visit. When you type a URL into your browser, DNS translates that into an IP address so your computer can connect to the right web server and retrieve the content you want to see. DNS is important because it makes it easy for people to remember website names, and it helps distribute internet traffic so websites load quickly and reliably.
+<!-- What is a query string?   -->
+A query string is a part of a website address (URL) that has extra information in it. It starts with a question mark and has key-value pairs separated by ampersands. The information in the query string is sent to the web server so it can give you more specific results based on what you're looking for. It's a way for websites to make their content more customized to what you want.
+<!-- What are two HTTP verbs and how are they different? -->
+ GET: This method is used to retrieve a resource from the web server, such as a webpage, an image, or a file. When a web browser sends a GET request, the server responds by sending the requested resource back to the browser. GET requests are generally considered safe and idempotent, which means they can be repeated without changing the state of the resource. POST: This method is used to submit data to a web server, such as a form submission or an API request. When a web browser sends a POST request, the data is sent as part of the request body, rather than in the URL. The server then processes the data and responds with a status code indicating the success or failure of the request. POST requests are generally considered non-idempotent, which means they can change the state of the resource with each request.
+<!-- What is an HTTP request?  -->
+An HTTP request is a message sent by a client, usually a web browser, to a web server requesting a specific resource, such as a webpage, an image, or a file. The request typically includes a URL that identifies the resource and one or more HTTP methods or verbs that indicate the action to be performed on the resource.
+What is an HTTP response? An HTTP response is the message sent by a web server to a client in response to an HTTP request. It contains the requested resource, or an error message if the resource is not available or the request is invalid.
+<!-- What is an HTTP header?  -->
+Give a couple examples of request and response headers you have seen. An HTTP header is a component of an HTTP request or response that contains additional information about the message being sent. Headers allow clients and servers to exchange information about the request or response, such as the type of data being sent, the preferred language or encoding, and any authentication or caching information.
+
+<!-- Here are some examples of HTTP request headers: -->
+
+User-Agent: This header identifies the web browser or other client software making the request, such as "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36".
+
+Accept-Language: This header specifies the preferred language for the response, such as "en-US,en;q=0.9".
+
+Authorization: This header contains authentication credentials, such as a username and password, for accessing a protected resource.
+
+<!-- Here are some examples of HTTP response headers: -->
+
+Content-Type: This header indicates the type of data being returned, such as "text/html" for an HTML webpage or "application/json" for a JSON response.
+
+Cache-Control: This header specifies how long the response should be cached by the client, such as "max-age=3600" for a one-hour cache time.
+
+<!-- 
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser? -->
+
+When you type "http://somesite.com/some/page.html" into a browser, several processes happen behind the scenes to display the requested web page. Here is a high-level overview of the steps involved:
+
+DNS lookup: The browser sends a request to the Domain Name System (DNS) server to resolve the domain name "somesite.com" to an IP address.
+
+TCP connection: The browser establishes a TCP connection with the web server at the IP address returned by the DNS lookup.
+
+HTTP request: The browser sends an HTTP request to the web server for the resource located at "/some/page.html" on the server.
+
+Server processing: The web server receives the request and processes it, retrieving the requested resource from the file system or database and preparing an HTTP response to send back to the browser.
+
+HTTP response: The web server sends an HTTP response to the browser containing the requested resource, along with any headers and metadata.
+
+Browser rendering: The browser receives the HTTP response and begins rendering the page, parsing the HTML, CSS, and JavaScript code and rendering it in the browser window.
+
+Client-side processing: If the web page contains any client-side scripts, such as JavaScript, the browser executes them to add interactivity and functionality to the page.
